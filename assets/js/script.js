@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
             menuMobile.style.right = '0px';
             flagMenuMobile = 1;
         } else {
-            menuMobile.style.right = '-500px';
+            menuMobile.style.right = '-700px';
             flagMenuMobile = 0;
         }
     });
