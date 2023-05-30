@@ -8,6 +8,7 @@
 
     <!-- Estilos -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
     
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +21,7 @@
     
     <!-- Scripts -->
     <script src="assets/js/script.js"></script>
+    <script defer src="assets/js/animation.js"></script>
 </head>
 <body>
     <header>
@@ -64,7 +66,7 @@
                             <div class="text-home">
                                 <h4>Dra. Jordana Menez, especialista em Psiquiatria, está pronta para ajudar você a encontrar equilíbrio emocional e bem-estar. Agende sua consulta hoje mesmo.</h4> 
                             </div>
-                            <div class="btn-red">ENTRAR EM CONTATO</div>
+                            <div data-anime="bottom" class="btn-red">ENTRAR EM CONTATO</div>
                         </div>
                         <div class="home-right">
                             <div class="img-home">
@@ -91,8 +93,8 @@
                         <div class="sobre-right">
                             <h2>Sobre mim</h2>
                             <hr class="hr-low-red">
-                            <p>Olá! Sou a Dra. Jordana Menez, uma psiquiatra formada pela Universidade Federal de Goiás (UFG) e com especialização em Psiquiatria também pela UFG. Com anos de experiência clínica, minha abordagem de tratamento é baseada em evidências e personalizada para atender às necessidades únicas de cada paciente. Trabalho em parceria com meus pacientes, oferecendo um espaço seguro e acolhedor para explorar suas preocupações, emoções e metas de vida. Meu objetivo é fornecer cuidados de saúde mental abrangentes e empáticos, ajudando meus pacientes a alcançarem uma vida saudável e equilibrada.</p> 
-                            <div class="btn-red">ME ENCONTRE NAS REDES</div>
+                            <p data-anime="right">Olá! Sou a Dra. Jordana Menez, uma psiquiatra formada pela Universidade Federal de Goiás (UFG) e com especialização em Psiquiatria também pela UFG. Com anos de experiência clínica, minha abordagem de tratamento é baseada em evidências e personalizada para atender às necessidades únicas de cada paciente. Trabalho em parceria com meus pacientes, oferecendo um espaço seguro e acolhedor para explorar suas preocupações, emoções e metas de vida. Meu objetivo é fornecer cuidados de saúde mental abrangentes e empáticos, ajudando meus pacientes a alcançarem uma vida saudável e equilibrada.</p> 
+                            <div data-anime="right" class="btn-red">ME ENCONTRE NAS REDES</div>
                         </div>
                     </div>
                 </div>
@@ -103,21 +105,97 @@
             <div class="areas-atuacao">
                 <div class="center">
                     <div class="atuacao">
-                        <h2>Áreas de atuação</h2>
+                        <h2 data-anime="top">Áreas de atuação</h2>
                         <p>Descubra quais áreas atendo e veja se seu quadro se encaixa no meu perfil</p>
                     </div>                        
-                    <div class="lista-atuacao">
-                        <div class="atuacao-item">aaa</div>
-                        <div class="atuacao-item">bbb</div>
-                        <div class="atuacao-item">ccc</div>
+                    <div data-anime="left" class="lista-atuacao">
+                        <div class="atuacao-item">
+                            <h4>Transtorno depressão maior</h4>
+                            <hr class="hr-low-red">
+                            <p>Uma condição de saúde mental caracterizada por tristeza persistente, perda de interesse, falta de energia e outros sintomas que afetam negativamente o funcionamento diário.</p>
+                        </div>
+                        <div class="atuacao-item">
+                            <h4>Transtorno afetivo bipolar</h4>
+                            <hr class="hr-low-red">
+                            <p>Condição mental com episódios de humor extremo alternando entre mania (euforia, energia elevada) e depressão (tristeza profunda). Requer diagnóstico e tratamento profissional para gerenciar os episódios de forma adequada.</p>
+                        </div>
+                        <div class="atuacao-item">
+                            <h4>Transtornos ansiosos</h4>
+                            <hr class="hr-low-red">
+                            <p>Condições de saúde mental com experiência persistente e excessiva de ansiedade, acompanhada por preocupações intensas, medos irracionais e sintomas físicos.</p>
+                        </div>
+                    </div>
+                    <div data-anime="right" class="lista-atuacao">
+                        <div class="atuacao-item">
+                            <h4>Transtorno obsessivo compulsivo (TOC)</h4>
+                            <hr class="hr-low-red">
+                            <p>Condição de saúde mental caracterizada por pensamentos intrusivos persistentes e preocupações obsessivas, que levam a comportamentos repetitivos e rituais compulsivos.</p>
+                        </div>
+                        <div class="atuacao-item">
+                            <h4>Esquizofrenia e outros transtornos psicóticos</h4>
+                            <hr class="hr-low-red">
+                            <p>Condições de saúde mental com alterações no pensamento, percepção, emoção e comportamento. Podem incluir alucinações, delírios e dificuldade em distinguir realidade e fantasia.</p>
+                        </div>
+                        <div class="atuacao-item">
+                            <h4>Transtornos alimentares</h4>
+                            <hr class="hr-low-red">
+                            <p>Condições de saúde mental com comportamentos e pensamentos prejudiciais sobre alimentação e imagem corporal. Exemplos: anorexia nervosa, bulimia nervosa e transtorno da compulsão alimentar periódica (TCAP).</p>
+                        </div>
+                    </div>
+                    <div data-anime="left" class="lista-atuacao">
+                        <div class="atuacao-item">
+                            <h4>Dependências alcoólica e química</h4>
+                            <hr class="hr-low-red">
+                            <p>Condições em que há dependência física e psicológica do álcool ou substâncias químicas, resultando em consumo compulsivo e descontrolado. Afetam negativamente a vida diária, relacionamentos e saúde geral.</p>
+                        </div>
+                        <div class="atuacao-item">
+                            <h4>Reações ao estresse e luto</h4>
+                            <hr class="hr-low-red">
+                            <p>Experiências emocionais comuns. Reações ao estresse envolvem respostas físicas, mentais e emocionais em situações estressantes. O luto é o processo de adaptação emocional após a perda de algo significativo.</p>
+                        </div>
+                        <div class="atuacao-item">
+                            <h4>Déficit de atenção e hiperatividade</h4>
+                            <hr class="hr-low-red">
+                            <p>Transtorno neurobiológico com sintomas de desatenção, hiperatividade e impulsividade. Pode afetar crianças, adolescentes e adultos. Requer tratamento que combina terapia comportamental, estratégias educacionais e, às vezes, medicamentos.</p>
+                        </div>
+                    </div>
+                    <div data-anime="right" class="lista-atuacao">
+                        <div class="atuacao-item">
+                            <h4>Transtorno espectro autista (TEA)</h4>
+                            <hr class="hr-low-red">
+                            <p>Condição que afeta comunicação, interação social e comportamento. Caracterizada por dificuldades sociais, comportamentos repetitivos e interesses restritos. Requer tratamento e apoio para desenvolver habilidades sociais e de comunicação.</p>
+                        </div>
+                        <div class="atuacao-item">
+                            <h4>Transtornos de personalidade</h4>
+                            <hr class="hr-low-red">
+                            <p>Condições de saúde mental com padrões rígidos e disfuncionais de pensamentos, emoções e comportamento. Podem envolver dificuldades interpessoais, instabilidade emocional e impulsividade. O tratamento envolve terapia para melhorar a qualidade de vida.</p>
+                        </div>
+                        <div class="atuacao-item">
+                            <h4>Transtornos de sexualidade</h4>
+                            <hr class="hr-low-red">
+                            <p>Condições de saúde mental com comportamentos e atrações sexuais disfuncionais. Podem incluir disfunção erétil, transtorno de desejo sexual, identidade de gênero e parafilias. Requerem tratamento terapêutico.</p>
+                        </div>
+                    </div>
+
+                    <div data-anime="top" class="lista-atuacao">
+                        <div class="link-transtornos">
+                            <a href="#">Saiba mais sobre os tipos de transtornos</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section>
+            <div class="contato">
+                <div class="center">
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- <section>
             <ul>
-                <li>serviços oferecidos</li>
                 <li>contato</li>
                 <li>difrenciais</li>
                 <li>depoimentos</li>
@@ -125,7 +203,7 @@
                 <li>Links sociais</li>
                 <li>recursos emergenciais</li>
             </ul>
-        </section>
+        </section> -->
     </div>
 
     <footer>
