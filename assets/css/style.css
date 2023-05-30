@@ -198,7 +198,7 @@ header {
     right: 0;
     top: 0;
     width: 50%;
-    height: 540px;
+    height: 100%;
     overflow: hidden;
 }
 .img-sobre-mim {
@@ -303,6 +303,37 @@ header {
     color: var(--vermelho-p);
 }
 
+footer {
+    margin-top: 40px;
+    width: 100%;
+    background-color: #0E280D;
+    height: 300px;
+}
+.footer-content {
+    padding: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-right h3 {
+    color: #FFF;
+    font-family: 'Merriweather', sans-serif;
+    margin-top: 0;
+}
+.social-footer {
+    margin-top: 25px;
+    display: flex;
+    gap: 25px;
+}
+.social-footer a {
+    width: 40px;
+    height: 40px;
+    background-color: var(--vermelho-p);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
 @media (max-width: 1180px) {
     .btn-menu-mobile {
         display: flex;
@@ -311,4 +342,16 @@ header {
     .social-header {
         display: none;
     }
+}
+
+.wpp-flutuante {
+    position: fixed;
+    bottom: 100px;
+    right: 150px;
+    opacity: 0;
+    z-index: 10;
+    transition: .5s;
+}
+.wpp-flutuante:hover {
+    transform: scale(1.1);
 }
