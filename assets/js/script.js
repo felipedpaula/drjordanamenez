@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
   
     btnMenu.addEventListener('click', () => {
         if (flagMenuMobile == 0) {
-            menuMobile.style.right = '0px';
+            menuMobile.style.width = '320px';
             flagMenuMobile = 1;
         } else {
-            menuMobile.style.right = '-700px';
+            menuMobile.style.width = '0px';
             flagMenuMobile = 0;
         }
     });
