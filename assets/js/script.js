@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     btnMenu.addEventListener('click', () => {
         if (flagMenuMobile == 0) {
-            menuMobile.style.width = '320px';
+            menuMobile.style.width = '100%';
             flagMenuMobile = 1;
         } else {
             menuMobile.style.width = '0px';
@@ -26,7 +26,19 @@ document.addEventListener('DOMContentLoaded', () => {
             wppFlutuante.style.opacity = '0';
         }
     });
-    
+
+    let linksMobile = document.querySelectorAll('.menu-mobile-ul li');
+    linksMobile.forEach(function(link) {
+        link.addEventListener('click', function() {
+            if (flagMenuMobile == 0) {
+                menuMobile.style.width = '100%';
+                flagMenuMobile = 1;
+            } else {
+                menuMobile.style.width = '0px';
+                flagMenuMobile = 0;
+            }
+        });
+      });
 });
   
   

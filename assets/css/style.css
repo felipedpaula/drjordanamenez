@@ -22,6 +22,10 @@ section {
 }
 header {
     background-color: #FFF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
 .hr-low-red {
     width: 80px;
@@ -45,6 +49,9 @@ header {
     list-style: none;
     gap: 15px;
     margin: 0;
+}
+.menu-header a:hover {
+    text-decoration: none;
 }
 .menu-header li {
     width: 120px;
@@ -129,6 +136,22 @@ header {
     justify-content: center;
     align-items: center;
     background-color: #0f2c0e;
+}
+.social-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.social-mobile a {
+    width: 40px;
+    height: 40px;
+    background-color: var(--vermelho-p);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
 }
 .start-home {
     margin-top: 30px;
@@ -433,6 +456,21 @@ footer {
 .wpp-flutuante:hover {
     transform: scale(1.1);
 }
+.rodape {
+    padding: 24px 0;
+    width: 100%;
+    background-color: #102e0f;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #FFF;
+}
+.rodape a {
+    color: var(--vermelho-p);
+    font-weight: 600;
+}
 @media (max-width: 1400px) {
     .wpp-flutuante {
         right: 20px;
@@ -508,5 +546,13 @@ footer {
     .footer-content {
         flex-direction: column;
         gap: 50px;
+        align-items: center;
+        padding: 36px 0 24px 0;
+    }
+    .social-footer {
+        justify-content: center;
+    }
+    footer {
+        height: auto;
     }
 }
