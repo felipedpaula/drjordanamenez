@@ -9,14 +9,13 @@
   }
 body {
     margin: 0;
-    background-color: #f1f1f1;
 }
 .corpo-site {
     padding-top: 80px;
 }
 section {
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #fff3f3;;
 }
 .center {
     width: 100%;
@@ -35,6 +34,12 @@ header {
     margin: 0;
     border: 2px solid var(--vermelho-p);
     background-color: var(--vermelho-p);
+}
+.hr-green-low {
+    width: 80px;
+    margin: 0;
+    border: 2px solid var(--verde-p);
+    background-color: var(--verde-p);
 }
 .topo-header {
     position: relative;
@@ -84,7 +89,8 @@ header {
     align-items: center;
     gap: 15px;
 }
-.social-header a {
+.social-header a,
+.ig-contato {
     width: 40px;
     height: 40px;
     background-color: var(--vermelho-p);
@@ -415,8 +421,128 @@ header {
     color: #FFF !important;
     font-weight: 600 !important;
 }
+.area-contato {
+    padding: 60px 12px;
+}
+.contato-topo {
+    width: 100%;
+}
+.contato-topo h2 {
+    font-weight: 600;
+    font-family: 'Merriweather', sans-serif;
+}
+.contato-topo p {
+    margin-top: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.contato-flex {
+    width: 100%;
+    display: flex;
+    min-height: 400px;
+    background-color: #FFF;
+    box-shadow: 1px 1px 5px 5px #00000008;
+    margin-top: 25px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.contato-left {
+    width: 50%;
+    background-color: var(--vermelho-p);
+}
+.form-contato {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    padding: 24px;
+}
+.input-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.input-form label {
+    color: #FFF;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+.contato-right {
+    width: 50%;
+    padding: 12px 24px;
+    display: flex;
+    flex-direction: column;
+}
+.clinica-item {
+    width: 100%;
+    padding: 12px 0;
+    margin-bottom: 20px;
+}
+.input-field {
+    width: 100%;
+    height: 40px;
+    border: 0;
+    border-radius: 4px;
+    padding-left: 12px;
+    outline: 0;
+    background-color: #FFF;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+textarea {
+    min-height: 120px;
+    padding: 12px 0;
+}
+.input-submit {
+    height: 45px;
+    border: 0;
+    background-color: #8d3127;
+    color: #FFF;
+    cursor: pointer;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+}
+.input-submit:hover {
+    background-color: #802c23;
+}
+.clinica-item h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--verde-p);
+    font-weight: 600;
+    font-size: 20px;
+}
+.clinica-option {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.option-txt {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.crm-contato {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.crm-contato a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    margin: 20px 0;
+    color: #303030;
+    text-decoration: none;
+}
+.crm-contato a:hover {
+    color: var(--vermelho-p);
+}
 footer {
-    margin-top: 40px;
     width: 100%;
     background-color: #0E280D;
     height: 300px;
@@ -552,6 +678,9 @@ footer {
     .btn-link {
         white-space: normal !important;
     }
+    .contato-flex {
+        flex-direction: column;
+    }
     .footer-content {
         flex-direction: column;
         gap: 50px;
@@ -560,6 +689,16 @@ footer {
     }
     .social-footer {
         justify-content: center;
+    }
+    .area-contato {
+        padding-bottom: 20px;
+    }
+    .contato-left,
+    .contato-right {
+        width: 100%;
+    }
+    .contato-right {
+        padding: 36px 24px;
     }
     footer {
         height: auto;
