@@ -11,6 +11,9 @@ body {
     margin: 0;
     background-color: #f1f1f1;
 }
+.corpo-site {
+    padding-top: 80px;
+}
 section {
     overflow: hidden;
     background-color: #f1f1f1;
@@ -154,7 +157,7 @@ header {
     border-radius: 4px;
 }
 .start-home {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .home-flex {
     width: 100%;
