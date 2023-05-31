@@ -115,7 +115,6 @@ header {
     width: 0px;
     overflow: hidden;
     transition: 0.4s;
-    border-radius: 12px 0 0 0;
 }
 .menu-mobile nav {
     width: 100%;
@@ -460,7 +459,7 @@ footer {
     transform: scale(1.1);
 }
 .rodape {
-    padding: 24px 0;
+    padding: 24px 12px;
     width: 100%;
     background-color: #102e0f;
     display: flex;
@@ -501,7 +500,7 @@ footer {
     }
     .home-right {
         position: absolute;
-        opacity: 0.2;
+        opacity: 0.35;
         width: 100%;
         z-index: 1;
     }
@@ -542,6 +541,9 @@ footer {
     }
     .atuacao-item {
         max-width: 100%;
+    }
+    .atuacao-item h4 {
+        font-size: 20px;
     }
     .btn-link {
         white-space: normal !important;
