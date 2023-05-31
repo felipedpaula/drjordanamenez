@@ -15,10 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     document.addEventListener('scroll', function() {
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        var windowHeight = window.innerHeight;
-        var documentHeight = document.documentElement.scrollHeight;
-        var wppFlutuante = document.querySelector('.wpp-flutuante');
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        let windowHeight = window.innerHeight;
+        let documentHeight = document.documentElement.scrollHeight;
+        let wppFlutuante = document.querySelector('.wpp-flutuante');
         
         if (scrollTop >= 400 && (scrollTop + windowHeight) < (documentHeight - 100)) {
             wppFlutuante.style.opacity = '1';
