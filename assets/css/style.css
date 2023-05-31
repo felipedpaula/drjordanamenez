@@ -507,6 +507,10 @@ footer {
     .home-left .btn-red {
         width: 100%;
     }
+    .text-home h4 {
+        font-weight: 600;
+        color: #000;
+    }
     .sobre-mim {
         margin-top: 0;
     }
@@ -559,5 +563,10 @@ footer {
     }
     footer {
         height: auto;
+    }
+}
+@media (max-width:500px) {
+    .title-home {
+        width: 100%;
     }
 }
