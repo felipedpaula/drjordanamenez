@@ -433,6 +433,7 @@ header {
 }
 .contato-topo p {
     margin-top: 25px;
+    font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
@@ -542,6 +543,72 @@ textarea {
 .crm-contato a:hover {
     color: var(--vermelho-p);
 }
+.area-galeria {
+    width: 100%;
+    min-height: 600px;
+    margin-bottom: 60px;
+    padding: 0 12px;
+}
+.galeria-topo {
+    padding: 0 12px;
+    margin-bottom: 25px;
+}
+.galeria-topo h2 {
+    font-weight: 600;
+    font-family: 'Merriweather', serif;
+}
+.galeria-topo p {
+    margin-top: 25px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.swiper-button-next, .swiper-button-prev {
+    color: var(--vermelho-p) !important;
+}
+.swiper-pagination-bullet-active {
+    background: var(--vermelho-p) !important;
+}
+.img-slide {
+    width: 100%;
+}
+.swiper {
+    width: 100%;
+    height: 600px;
+    box-shadow: 1px 1px 5px 5px #00000008 !important; 
+    border-radius: 8px;
+    overflow: hidden;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.img-slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
 footer {
     width: 100%;
     background-color: #0E280D;
@@ -599,6 +666,7 @@ footer {
     color: var(--vermelho-p);
     font-weight: 600;
 }
+
 @media (max-width: 1400px) {
     .wpp-flutuante {
         right: 20px;
@@ -702,6 +770,10 @@ footer {
     }
     footer {
         height: auto;
+    }
+    .area-galeria,
+    .swiper {
+        max-height: 400px;
     }
 }
 @media (max-width:500px) {
