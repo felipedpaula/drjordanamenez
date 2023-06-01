@@ -341,22 +341,29 @@
                     </div>
                     <div class="contato-flex">
                         <div class="contato-left">
-                            <form class="form-contato" action="">
+                            <form class="form-contato" action="https://formsubmit.co/felipeppdev@gmail.com" method="POST">
                                 <div class="input-form">
                                     <label for="nome">Nome:</label>
-                                    <input class="input-field" type="text" name="nome" id="nome">
+                                    <input class="input-field" type="text" name="Nome" id="nome">
                                 </div>
                                 <div class="input-form">
                                     <label for="email">Email:</label>
-                                    <input class="input-field" type="email" name="email" id="email">
+                                    <input class="input-field" type="email" name="Email" id="email">
                                 </div>
                                 <div class="input-form">
                                     <label for="mensagem">Mensagem:</label>
-                                    <textarea class="input-field" type="text" name="mensagem" id="mensagem"></textarea>
+                                    <textarea class="input-field" type="text" name="Mensagem" id="mensagem"></textarea>
                                 </div>
+                                
+                                <input type="hidden" name="_subject" value="Novo Contato!">
+                                <input type="text" name="_honey" style="display:none;">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_next" value="https://felipedpaula.github.io/drjordanamenez/#section-contato">
+
                                 <div class="input-form">
                                     <input class="input-submit" type="submit" value="ENVIAR MENSAGEM">
                                 </div>
+
                             </form>
                         </div>
                         <div class="contato-right" data-anime="right">
