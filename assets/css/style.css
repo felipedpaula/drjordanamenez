@@ -352,6 +352,12 @@ header {
     border-radius: 4px;
     background-color: #FFF;
     border-bottom: 3px solid var(--vermelho-p);
+    text-decoration: none;
+    color: #000;
+}
+.atuacao-item:hover {
+    color: #000;
+    text-decoration: none;
 }
 .atuacao-item h4 {
     margin: 0;
