@@ -1,12 +1,13 @@
 * {
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 :root {
     --vermelho-p: #B24236;
     --verde-p: #0C260B;
     --sans-serif: font-family: 'Montserrat', sans-serif;
     --serif: font-family: 'Merriweather', serif;
-  }
+}
 body {
     margin: 0;
 }
@@ -673,6 +674,28 @@ textarea {
 }
 .link-google-avaliacoes a:hover {
     color: var(--vermelho-p);
+}
+
+.topo-pagina {
+    width: 100%;
+    padding: 0 12px;
+    margin: 40px 0;
+}
+.topo-pagina h1 {
+    font-size: 32px;
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+}
+.conteudo-pagina {
+    padding: 24px;
+    width: 100%;
+    background-color: #FFF;
+    margin-bottom: 30px;
+}
+.conteudo-pagina h1, h2, h3, h4 {
+    font-family: 'Merriweather', serif !important;
+    font-size: 24px !important;
+    font-weight: 600;
 }
 footer {
     width: 100%;
