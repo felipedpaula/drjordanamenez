@@ -1,0 +1,5 @@
+# Ativar o módulo de reescrita do Apache
+RewriteEngine On
+
+# Redirecionar apenas a URL principal para o arquivo index.html
+RewriteRule ^$ index.html [L]
