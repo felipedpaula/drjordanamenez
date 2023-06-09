@@ -847,7 +847,7 @@ footer {
         white-space: normal !important;
     }
     .contato-flex {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .footer-content {
         flex-direction: column;
